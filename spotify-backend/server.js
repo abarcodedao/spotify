@@ -11,6 +11,7 @@ const app = express();
 const port = process.env.PORT || 4000;
 connectDB();
 connectCloudinary();
+dotenv.config();
 
 //middleware
 app.use(express.json());
